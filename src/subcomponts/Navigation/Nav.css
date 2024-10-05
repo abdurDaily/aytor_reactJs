@@ -1,0 +1,47 @@
+h1{
+    color: red;
+}
+ul{
+    list-style: none;
+}
+nav ul a {
+  color: #000;
+  text-decoration: none;
+}
+nav .icons li a{
+    padding: 0 10px;
+}
+nav .icons li.last{
+    position: relative;
+}
+nav .icons li .number{
+    background: #FF6F61;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 15px;
+    font-size: 14px;
+    position: absolute;
+    right: 2px;
+}
+
+.search_foot {
+    background-color: #fff;
+    box-shadow: 3px 3px 30px #ccc;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.search_child{
+    background-color: #fff;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: inline-block;
+    transform: translateY(-50%);
+    text-align: center;
+    line-height: 45px;
+}
