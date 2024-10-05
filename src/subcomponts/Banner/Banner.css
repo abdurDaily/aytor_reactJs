@@ -1,0 +1,28 @@
+#parent{
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#test .swiper-pagination{
+    position: absolute;
+    left: 50% ;
+    transform: translateX(-50%) ;
+    text-align: left ;
+    bottom: 30% ;
+}
+#test .swiper-pagination-bullet{
+    left: 0 ;
+    width: 20px ;
+    height: 5px ;
+    border-radius: 0 ;
+    background-color: #FF6F61 ;
+    opacity: 1;
+}
+#test .swiper-pagination-bullet-active{
+      width: 30px ;
+   background-color: #fff;
+  }
