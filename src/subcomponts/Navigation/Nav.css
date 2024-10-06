@@ -36,12 +36,20 @@ nav .icons li .number{
     width: 100%;
 }
 .search_child{
-    background-color: #fff;
+    background-color: #FF6F61;
+    color: #fff;
     width: 45px;
     height: 45px;
     border-radius: 50%;
     display: inline-block;
     transform: translateY(-50%);
     text-align: center;
-    line-height: 45px;
+    line-height: 40px;
+}
+.first{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
 }

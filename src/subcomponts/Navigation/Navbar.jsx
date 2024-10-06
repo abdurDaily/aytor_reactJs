@@ -10,6 +10,7 @@ import Search from "../Search/Search";
 
 
 
+
 const Navbar = () => {
 
     let [data,setData] = useState(false);
@@ -31,11 +32,7 @@ const Navbar = () => {
           <button
             className="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+            data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"
           >
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -112,14 +109,59 @@ const Navbar = () => {
       <section className="search_foot d-lg-none">
         <div className="container">
           <div className="row">
+
+
             <div className="col-2 mx-auto text-center">
-              <span className="search_child">
+              <span className="first" onClick={search_btn}>
+              <FaRegUser />
+              </span>
+            </div>
+
+
+            <div className="col-2 mx-auto text-center">
+              <span className="search_child" onClick={search_btn}>
                 <IoSearch />
               </span>
             </div>
+
+
+            <div className="col-2 mx-auto text-center">
+              <span className="first" onClick={search_btn}>
+              <FaRegUser />
+              0
+              </span>
+            </div>
+
+
           </div>
         </div>
       </section>
+
+
+
+
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+    </div>
+    <div class="dropdown mt-3">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+        Dropdown button
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
 
       <Search open={data} cross={cross} />
     </div>

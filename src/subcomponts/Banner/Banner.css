@@ -1,28 +1,92 @@
-#parent{
+.slider{
     height: 600px;
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
     display: flex;
     align-items: center;
+}
+.slider .container h4{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 156%;
+    color: #1d1d1d;
+}
+.slider .container h2{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 116%;
+    color: #1d1d1d;
+}
+.slider .container p{
+    font-family: var(--second-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 175%;
+color: #1d1d1d;
+}
+.slider .container a{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 167%;
+    text-align: center;
+    color: var(--comon-colot);
+    background: #FF6F61;
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#test .swiper-pagination{
+    background-color: red;
+    text-align: left;
+}
+#test{
     position: relative;
 }
-#test .swiper-pagination{
+#test .test_2{
     position: absolute;
-    left: 50% ;
-    transform: translateX(-50%) ;
-    text-align: left ;
-    bottom: 30% ;
+    bottom: 0;
+    z-index: 100;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 25%;
+    /* width: 100%;
+    height: 10px; */
+
 }
-#test .swiper-pagination-bullet{
-    left: 0 ;
-    width: 20px ;
-    height: 5px ;
-    border-radius: 0 ;
-    background-color: #FF6F61 ;
-    opacity: 1;
-}
+
 #test .swiper-pagination-bullet-active{
-      width: 30px ;
-   background-color: #fff;
-  }
+    background: #FF6F61;
+    width: 30px;
+    height: 6px;
+    border-radius: 0;
+}
+#test h4{
+    transform: translateY(-100px);
+    transition: 0.5s ;
+    opacity: 0;
+    visibility: hidden;
+}
+#test h2, #test p{
+    transform: translateY(100px);
+    transition: 0.5s ;
+    opacity: 0;
+    visibility: hidden;
+}
+#test .swiper-slide-active h2, #test .swiper-slide-active p{
+    transition-delay: 0.54s;
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+}
+#test .swiper-slide-active h4{
+    transition-delay: 0.54s;
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+}
